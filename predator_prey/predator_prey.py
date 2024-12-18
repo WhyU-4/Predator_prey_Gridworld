@@ -34,6 +34,9 @@ class PredatorPrey(gym.Env):
     The terminating condition of this task is when all preys are caught by more than one predator.
     For every new episodes , preys are initialized into random locations. Also, preys never move by themself into
     predator's neighbourhood
+    现在地图规模可随意调整，建议是正方形
+    现在猎人可随意数量
+    移动策略为静止
     """
     metadata = {'render.modes': ['human', 'rgb_array']}
 
